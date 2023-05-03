@@ -5,27 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interclasse - Hackaton 2023</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="../../assets/css/nav.css">
+    <link rel="stylesheet" href="../../assets/css/futsal.css">
     <script src="assets/js/script.js"defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
+    
     <nav> 
         <div class="logo">
-            <img src="./assets/images/logo.png" alt="Logo">
+            <img src="../../assets/images/logo.png" alt="Logo">
         </div>
         <ul>
-            <li class="list active">
-            <a href="#">
+            <li class="list ">
+            <a href="../index.html">
                 <span class="icon"><ion-icon name="home"></ion-icon></span>
                 <span class="tittle">Home</span>
             </a>
             </li>
 
             <li class="list">
-                <a href="./components/calendar.html">
+                <a href="../calendar.html">
                     <span class="icon"><ion-icon name="calendar"></ion-icon></span>
                     <span class="tittle">Calendário</span>
                 </a>
@@ -33,14 +34,14 @@
 
 
             <li class="list">
-                <a href="./components/login.html">
+                <a href="../login.html">
                     <span class="icon"><ion-icon name="pencil"></ion-icon></span>
                     <span class="tittle">Cadastro</span>
                 </a>
                 </li>
 
-             <li class="list">
-            <a href="#">
+             <li class="list  active">
+            <a href="../modalidades.html">
                 <span class="icon"><ion-icon name="tennisball"></ion-icon></span>
                 <span class="tittle">Modalidades</span>
             </a>
@@ -55,5 +56,19 @@
 
         </ul>
     </nav>
+
+<div class="links">
+    
+    <a href="#">Data dos Jogos</a>
+    <a href="#" class="right">Data dos Treinos</a>
+    <a href="#" class="right">Times</a>
+    <a href="#">Chaveamento</a>
+</div>
+
+<div class="data-jogos">
+    <div class="close">
+        <span id="close-icon"><ion-icon name="close"></ion-icon></span>
+    </div>
+</div>
+
 </body>
-</html>
