@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interclasse - Hackaton 2023</title>
+    <link rel="stylesheet" href="../../assets/css/nav.css">
+    <link rel="stylesheet" href="../../assets/css/futsal.css">
+    <script src="assets/js/script.js"defer></script>
+    <script src="../../assets/js/futsal.js"defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<style>
+    body{
+        background-image: url(/assets/images/volei-background.png);
+        background-position: bottom;
+    }
+</style>
+</head>
+<body>
+
+    <nav> 
+        <div class="logo">
+            <img src="../../assets/images/logo.png" alt="Logo">
+        </div>
+        <ul>
+            <li class="list ">
+            <a href="/index.html">
+                <span class="icon"><ion-icon name="home"></ion-icon></span>
+                <span class="tittle">Home</span>
+            </a>
+            </li>
+
+            <li class="list">
+                <a href="../calendar.html">
+                    <span class="icon"><ion-icon name="calendar"></ion-icon></span>
+                    <span class="tittle">Calendário</span>
+                </a>
+                </li>
+
+
+            <li class="list">
+                <a href="../login.html">
+                    <span class="icon"><ion-icon name="pencil"></ion-icon></span>
+                    <span class="tittle">Cadastro</span>
+                </a>
+                </li>
+
+             <li class="list  active">
+            <a href="../modalidades.html">
+                <span class="icon"><ion-icon name="tennisball"></ion-icon></span>
+                <span class="tittle">Modalidades</span>
+            </a>
+            </li>
+
+            <li class="list">
+                <a href="../modalidades/e-sports.html">
+                    <span class="icon"><ion-icon name="game-controller"></ion-icon></span>
+                    <span class="tittle">E - Sports</span>
+                </a>
+                </li>
+                <li class="list">
+                    <a href="/components/jeesp.html">
+                        <span class="icon"><ion-icon name="flag"></ion-icon></span>
+                        <span class="tittle">JEESP</span>
+                    </a>
+                    </li>
+        </ul>
+    </nav>
+
+<div class="links">
+    
+    <a href="#" id="form-jogos">Data dos Jogos</a>
+    <a href="#" id="form-treinos"class="right">Data dos Treinos</a>
+    <a href="/components/modalidades/resultado.html"><span id="jeesp">Campeões</span></a>
+    <a href="#" id="form-times"class="right">Times</a>
+    <a href="#" id="form-chave">Chaveamento</a>
+</div>
+
+<div class="link-jogos">
+    <div class="close">
+        <span id="close-icon"><ion-icon name="close"></ion-icon></span>  
+    </div>
+    <h1>INTERCLASSE</h1>
+    <table>
+         <tr>
+             <th id="table-tittle">Data  dos  Jogos</th>
+         </tr>  
+         <tr>
+             <td>XX/XX</td>
+         </tr>      
+         <tr>
+            <td>XX/XX</td>
+        </tr>      
+        <tr>
+            <td>XX/XX</td>
+        </tr>      
+        <tr>
+            <td>XX/XX</td>
+        </tr>      
+    </table>
+</div>
+
+<div class="link-treinos">
+    <div class="close">
+        <span id="close-icon-2"><ion-icon name="close"></ion-icon></span>
+        
+    </div>  
+    <h1>ETEC</h1>
+    <table>
+         <tr>
+             <th id="table-tittle">Data  dos  Treinos</th>
+         </tr>  
+         <tr>
+             <td>XX/XX</td>
+         </tr>      
+         <tr>
+            <td>XX/XX</td>
+        </tr>      
+        <tr>
+            <td>XX/XX</td>
+        </tr>      
+        <tr>
+            <td>XX/XX</td>
+        </tr>      
+         <tr>
+            <td>XX/XX</td>
+        </tr>   
+    </table>
+</div>
+
+<div class="link-times">
+    <div class="close">
+        <span id="close-icon-3"><ion-icon name="close"></ion-icon></span>
+        
+    </div>  
+    <h1>INTERCLASSE</h1>
+    <div class="table">
+    <table id="table-times">
+        <tr>
+            <th><strong>SALAS</strong></th>
+            <th><strong>Integrantes</strong></th>
+        </tr>  
+        <tr>
+            <td rowspan="6">Xº XXX</td>
+            <td>XXXXXX</td>
+        </tr>     
+        <tr>
+            <td>XXXXXX</td>
+        </tr>     
+        <tr>
+            <td>XXXXXX</td>
+        </tr>      
+        <tr>
+            <td>XXXXXX</td>
+        </tr> 
+        <tr>
+            <td>XXXXXX</td>
+    
+        </tr> 
+        <tr>
+            <td>XXXXXX</td>
+       </tr>      
+       <tr>
+            <td rowspan="8">Xº XXX</td>
+            <td>XXXXXX</td>
+       </tr>      
+       <tr>
+        <td>XXXXXX</td>
+       </tr>     
+       <tr>
+        <td>XXXXXX</td>
+       </tr>  
+       <tr>
+        <td>XXXXXX</td>
+       </tr>  
+       <tr>
+        <td>XXXXXX</td>
+       </tr>  
+       <tr>
+        <td>XXXXXX</td>
+       </tr>      
+   </table>
+
+</div>
+</div>
+    <div class="link-chave">
+        <div class="close">
+            <span id="close-icon-4"><ion-icon name="close"></ion-icon></span>
+            
+        </div> 
+        <img id="cs-img"src="../../assets/images/chaveamento.png" alt="CS">
+    </div>
+</body>

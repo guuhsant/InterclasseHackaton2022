@@ -28,9 +28,10 @@ nav{
     background: var(--nav-color);
     width: 85px;
     box-shadow: 10px 0 0 var(--active-color);
-    border-left: 10px solid #424242;
+    border-left: 10px solid var(--nav-color);
     overflow-x: hidden;
     transition: 0.5s;
+    z-index: 99;
 }
 nav:hover{
     width: 300px;
@@ -107,3 +108,21 @@ nav ul li.active a::before{
     box-shadow: 15px 15px 0 var(--active-color);
 }     
 
+@media screen and (max-width:512px){
+    nav:hover{
+        width: 250px;
+    
+    }
+}@media screen and (max-width:350px){
+    nav:hover{
+        width: 170px;
+    
+    }
+    nav ul li a .icon ion-icon{
+        font-size: 1.1rem;
+    }
+    nav ul li a .tittle{
+        padding-left: 10px;
+        font-size: 0.7rem;
+    }
+}

@@ -1,3 +1,33 @@
 .image-calendar img{
-    width: 700px;
+    max-width: 80rem;
+    object-fit: cover;
+}
+@media screen and (max-width: 1024px){
+    .image-calendar img{
+        max-width: 50rem;
+        margin-left: 10rem;
+    }
+}
+@media screen and (max-width: 705px){
+    .image-calendar img{
+        max-width: 40rem;
+        margin-left: 10rem;
+    }
+}@media screen and (max-width: 560px){
+    .image-calendar img{
+        max-width:  30rem;
+        margin-left: 10rem;
+    }
+}
+@media screen and (max-width: 450px){
+    .image-calendar img{
+        max-width:  20rem;
+        margin-left: 10rem;
+    }
+}
+@media screen and (max-width: 350px){
+    .image-calendar img{
+        max-width:  20rem;
+        margin-left: 10rem;
+    }
 }

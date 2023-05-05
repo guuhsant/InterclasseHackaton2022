@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interclasse - Hackaton 2023</title>
+    <link rel="stylesheet" href="/assets/css/nav.css">
+    <link rel="stylesheet" href="/assets/css/jeesp.css">
+    
+    <script src="/assets/js/jeesp.js"defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <nav> 
+        <div class="logo">
+            <img src="../../assets/images/logo.png" alt="Logo">
+        </div>
+        <ul>
+            <li class="list ">
+            <a href="/index.html">
+                <span class="icon"><ion-icon name="home"></ion-icon></span>
+                <span class="tittle">Home</span>
+            </a>
+            </li>
+
+            <li class="list">
+                <a href="/components/calendar.html">
+                    <span class="icon"><ion-icon name="calendar"></ion-icon></span>
+                    <span class="tittle">Calendário</span>
+                </a>
+                </li>
+
+
+            <li class="list">
+                <a href="/components/login.html">
+                    <span class="icon"><ion-icon name="pencil"></ion-icon></span>
+                    <span class="tittle">Cadastro</span>
+                </a>
+                </li>
+
+             <li class="list">
+            <a href="/components/modalidades.html">
+                <span class="icon"><ion-icon name="tennisball"></ion-icon></span>
+                <span class="tittle">Modalidades</span>
+            </a>
+            </li>
+
+            <li class="list">
+                <a href="/components/modalidades/e-sports.html">
+                    <span class="icon"><ion-icon name="game-controller"></ion-icon></span>
+                    <span class="tittle">E - Sports</span>
+                </a>
+                </li>
+
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="flag"></ion-icon></span>
+                        <span class="tittle">JEESP</span>
+                    </a>
+                    </li>
+        </ul>
+    </nav>
+    <h1 id="tittle">JEESP</h1>
+    <main>
+        
+        <section id="text">
+            <p>Os Jogos Escolares do Estado de São Paulo (JEESP), tem por objetivo promover por meio da prática
+                esportiva, a integração e intercâmbio entre os estudantes das Unidades Escolares de Ensino Fundamental
+                e Médio, favorecer a descoberta de novos talentos esportivos.
+            </p>
+
+        </section>
+        <section id="form-box-1" class="inactive">
+            <div class="form-box" id="cadastro">
+                <h1>Cadastro JEESP</h1>
+                <div class="input-group">
+                    <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" name="name" id="name" required>
+                        <label for="name">Aluno: </label> 
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="football"></ion-icon></span>
+                        <select name="gender" id="gender" required>
+                            <option value=""hidden disabled selected>Modalidade: </option>
+                               <option class="option"value="masc">Vôlei</option>
+                               <option class="option" value="femin">Futsal</option>
+                               <option class="option" value="femin">Handebol</option>
+                            </select>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="male-female-sharp"></ion-icon></span>
+                     
+                        <select name="gender" id="gender" required>
+                    <option value=""hidden disabled selected>Gênero: </option>
+                       <option class="option"value="masc">Masculino</option>
+                       <option class="option" value="femin">Feminino</option>
+                    </select>
+                        
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="text" name="name" id="name" required>
+                        <label for="name">RG: </label> 
+                    </div>
+    
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="text" name="name" id="name" required>
+                        <label for="name">CPF: </label> 
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="text" name="name" id="name" required>
+                        <label for="name">RA: </label> 
+                    </div>
+                </form>
+                </div>
+                <button class= "btnForm" id="btnFormRegister">Enviar</button>
+            </div>
+        </section>
+
+        <section id="form-box-2">
+            <div class="form-box">
+                <h1>Login</h1>
+                <div class="input-group">
+                    <form action="#">
+                     <div class="input-box">
+                            <span class="icon"><ion-icon name="person"></ion-icon></span>
+                            <input type="text" name="name" id="name" required>
+                            <label for="name">Nome: </label> 
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="key"></ion-icon></span>
+                        <input type="text" name="name" id="codigoAcesso" required>
+                        <label for="name">Código de Acesso: </label> 
+                    </div>
+                    
+                  
+                </form>
+                </div>
+                <button class="btnForm" id="btnForm">Enviar</button>
+            </div>
+        </section>
+    </main>
+    </body>

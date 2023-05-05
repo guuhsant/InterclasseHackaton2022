@@ -5,28 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interclasse - Hackaton 2023</title>
-    <link rel="stylesheet" href="../assets/css/nav.css">
-    <link rel="stylesheet" href="../assets/css/modalidade.css">
-    <script src="assets/js/script.js"defer></script>
+    <link rel="stylesheet" href="../../assets/css/nav.css">
+    <link rel="stylesheet" href="../../assets/css/e-sports.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<style>
+    body{
+        background-image: url(/assets/images/game-2-background.png);
+    }
+</style>
 </head>
 <body>
-    
     <nav> 
         <div class="logo">
-            <img src="../assets/images/logo.png" alt="Logo">
+            <img src="../../assets/images/logo.png" alt="Logo">
         </div>
         <ul>
-            <li class="list ">
-            <a href="../index.html">
+            <li class="list">
+            <a href="../../index.html">
                 <span class="icon"><ion-icon name="home"></ion-icon></span>
                 <span class="tittle">Home</span>
             </a>
             </li>
 
             <li class="list">
-                <a href="./calendar.html">
+                <a href="../calendar.html">
                     <span class="icon"><ion-icon name="calendar"></ion-icon></span>
                     <span class="tittle">Calendário</span>
                 </a>
@@ -34,56 +37,67 @@
 
 
             <li class="list">
-                <a href="../components/login.html">
+                <a href="../login.html">
                     <span class="icon"><ion-icon name="pencil"></ion-icon></span>
                     <span class="tittle">Cadastro</span>
                 </a>
                 </li>
 
-             <li class="list  active">
-            <a href="./modalidades.html">
+             <li class="list">
+            <a href="../modalidades.html">
                 <span class="icon"><ion-icon name="tennisball"></ion-icon></span>
                 <span class="tittle">Modalidades</span>
             </a>
             </li>
 
-            <li class="list">
-                <a href="./modalidades/e-sports.html">
+            <li class="list active ">
+                <a href="#">
                     <span class="icon"><ion-icon name="game-controller"></ion-icon></span>
                     <span class="tittle">E - Sports</span>
                 </a>
                 </li>
+
                 <li class="list">
                     <a href="/components/jeesp.html">
                         <span class="icon"><ion-icon name="flag"></ion-icon></span>
                         <span class="tittle">JEESP</span>
                     </a>
                     </li>
+
         </ul>
     </nav>
 
-<div class="container">
-    <a href="/components/modalidades/volei.html">
-    <div class="modalidades">
-        <h2>Vôlei</h2>
-        <p>Informações</p>
+    <div class="container">
+        <a href="/components/e-sports/cs.html">
+        <div class="modalidades">
+           
+            <h2>CS GO</h2>
+            <p>Informações</p>
+            <img class="image"src="../../assets/images/cs.png" alt="">
+        </div>
+    </a>
+    <a href="/components/e-sports/cs.html">
+           <div class="modalidades">
+          
+            <h2>Valorant</h2>
+            <p>Informações</p>
+            <img id="vava-img"class="image"src="../../assets/images/valorant.png" alt="">
+        </div>
+    </a> 
+    <a href="/components/e-sports/cs.html">
+        <div class="modalidades">
+            <h2 id="lol">League of <br>Legends</h2>
+            <p>Informações</p>
+            <img id="lol-img"class="image"src="../../assets/images/lol.png" alt="">
+        </div>
+      </a>
+      <a href="/components/e-sports/cs.html">
+        <div class="modalidades">
+            <h2>FIFA</h2>
+            <p>Informações</p>
+            <img id="lol-img" class="image" src="/assets/images/fifa.png" alt="SLA PRC">
+        </div>
+       </a>
     </div>
-</a>
-
-  <a href="../components/modalidades/futsal.html">
-       <div class="modalidades ">
-        <h2>Futsal</h2>
-        <p>Informações</p>
-    </div>
-</a> 
-
-<a href="../components/modalidades/handbol.html">
-    <div class="modalidades">
-        <h2>Handebol</h2>
-        <p>Informações</p>
-    </div>
-</a>
-</div>
-
-
-</body>
+    
+    </body>

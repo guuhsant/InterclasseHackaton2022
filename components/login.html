@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Times</title>
+    <link rel="stylesheet" href="../assets/css/nav.css">
     <link rel="stylesheet" href="../assets/css/login.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script src="../assets/js/script.js"defer></script>
+    <script src="../assets/js/login.js"defer></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
@@ -45,29 +46,36 @@
             </li>
 
             <li class="list">
-                <a href="#">
-                    <span class="icon"><ion-icon name="construct"></ion-icon></span>
-                    <span class="tittle">Chaveamento</span>
+                <a href="../components/modalidades/e-sports.html">
+                    <span class="icon"><ion-icon name="game-controller"></ion-icon></span>
+                    <span class="tittle">E - Sports</span>
                 </a>
                 </li>
-
+                <li class="list">
+                    <a href="/components/jeesp.html">
+                        <span class="icon"><ion-icon name="flag"></ion-icon></span>
+                        <span class="tittle">JEESP</span>
+                    </a>
+                    </li>
         </ul>
     </nav>
 
-        <div class="form-box">
+        <div class="form-box inactive" id="cadastro">
             <h1>Cadastro de Times</h1>
             <div class="input-group">
                 <form action="#">
                 <div class="input-box">
-                    <span class="icon"><ion-icon name="bookmark"></ion-icon></span>
-                    <input type="text" name="name" id="name" required>
-                    <label for="name">Sala: </label> 
-                </div>
-
-                <div class="input-box">
                     <span class="icon"><ion-icon name="american-football"></ion-icon></span>
-                    <input type="text" name="name" id="name" required>
-                    <label for="name">Modalidade: </label> 
+                    <select name="gender" id="gender" required>
+                        <option value=""hidden disabled selected>Modalidade: </option>
+                           <option class="option"value="masc">Vôlei</option>
+                           <option class="option" value="femin">Futsal</option>
+                           <option class="option" value="femin">Handebol</option>
+                           <option class="option"value="masc">CS GO</option>
+                           <option class="option" value="femin">FIFA</option>
+                           <option class="option" value="femin">League of Legends</option>
+                           <option class="option" value="femin">Valorant</option>
+                        </select>
                 </div>
 
                 <div class="input-box">
@@ -94,10 +102,69 @@
                     <label for="name">Integrantes: </label> 
                 </div>
 
-                
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="people"></ion-icon></span>
+                    <input type="text" name="name" id="name" required>
+                    <label for="name">Integrantes: </label> 
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="people"></ion-icon></span>
+                    <input type="text" name="name" id="name" required>
+                    <label for="name">Integrantes: </label> 
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="people"></ion-icon></span>
+                    <input type="text" name="name" id="name" required>
+                    <label for="name">Integrantes: </label> 
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="people"></ion-icon></span>
+                    <input type="text" name="name" id="name" required>
+                    <label for="name">Integrantes: </label> 
+                </div>
+            
             </form>
             </div>
+            <button class="btnForm">Enviar</button>
         </div>
    
+        <!----------------------- Register ----------------------------->
+
+
+
+        <div class="form-box" id="login">
+            <h1>Login</h1>
+            <div class="input-group">
+                <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="bookmark"></ion-icon></span>
+
+                     <select name="sala" id="sala" required>
+                            <option value="" hidden disabled selected>Sala: </option>
+                               <option class="option"value="masc">1º MDS</option>
+                               <option class="option" value="femin">2º MDS</option>
+                               <option class="option" value="femin">3º MDS</option>
+                               <option class="option" value="femin">1º MAD</option>
+                               <option class="option" value="femin">2º MAD</option>
+                               <option class="option" value="femin">3º MAD</option>
+                               <option class="option" value="femin">1º JOD</option>
+                               <option class="option" value="femin">2º JOD</option>
+                               <option class="option" value="femin">3º JOD</option>
+                            </select>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="key"></ion-icon></span>
+                    <input type="text" name="name" id="codigoAcesso" required>
+                    <label for="name">Código de Acesso </label> 
+                </div>
+
+            </form>
+            </div>
+            <button class= "btnForm" id="btnFormRegister">Enviar</button>
+        </div>
 </body>
 </html>

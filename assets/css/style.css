@@ -9,12 +9,57 @@
     --nav-color: #101728;
     --active-color: #3055F5;
     --color-white: #fff;
+    --blue-color: #498EF5;
 }
 body{
-    background-image: url(../images/Home.png);
-    color: var(--color-white);
-    min-height: 100vh;
+    justify-content: flex-start;
+   align-items: flex-end;
+}
+.text{
+    padding-top: 2rem;
+}
+h1{
+    text-align: center;
+    background-color: var(--blue-color);
+    color: #000;
+    border-top-left-radius: 99px;
+    border-bottom-left-radius: 99px;
+    padding: 0.3rem;
+    font-weight: 600;
+    width: 30rem;   
+}
+h2{
+    padding: 2rem;
+    font-weight: 600;
+    text-align: right;
+    display: block;
+}
+p{
+    float: right;
+    width: 55%;    
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    text-align: end;
+    padding-right: 1.1rem;
+    font-weight: 500;
+}
+.teste{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 700px){
+    h1{
+        width: 15rem;
+        font-size: 1.6rem;
+    }
+    h2{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 350px){
+    h1{
+        width: 10rem;
+        font-size: 1.1rem;
+    }
 }

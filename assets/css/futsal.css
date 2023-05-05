@@ -1,8 +1,12 @@
 body{
     background-image: url(../images/bac-futsal.png);
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+}
+:root{
+    --nav-color: #101728;
+    --active-color: #3055F5;
 }
 .links{
     display: flex;
@@ -15,6 +19,12 @@ body{
     color: #fff;
     font-size: 1.2rem;
     text-transform: uppercase;
+    position: relative;
+    transition: transform .3s ease-in-out;
+}
+.links a:hover{
+    transform: translateY(-5px);
+    transition: transform .3s ease-in-out;  
 }
 .right{
     padding-left: 5rem;
@@ -22,25 +32,30 @@ body{
 body::after{
     content: '';
     height: 5px;
-    width: 50%;
+    width: 45%;
     background-color: #D7D9E1;
     top: 50%;
     left: 40%;
     z-index: 1;
     position: absolute;
 }
-.data-jogos{
+.link-jogos{
     position: relative;
     width: 440px;
     position: absolute;
     height: 500px;
     z-index: 99;
     border-radius: 20px;
-    background-color: transparent;
+    background-color: var(--nav-color);
     backdrop-filter: blur(20px);
     border: 2px solid #fff;
     overflow: hidden;
-    /* display: none; */
+    transform: scale(0);
+    transition: transform .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .close{
     position: absolute;
@@ -64,4 +79,165 @@ body::after{
     font-size: 1.5rem;
     color: #fff;
     font-weight: 1000;
+}
+#close-icon-2{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 1000;
+}
+#close-icon-3{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 1000;
+}
+#close-icon-4{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 1000;
+}
+.active{
+    transform: scale(1);
+    transition: transform .3s ease-in-out;
+}
+.link-treinos{
+    position: relative;
+    width: 440px;
+    position: absolute;
+    height: 500px;
+    z-index: 99;
+    border-radius: 20px;
+    background-color: var(--nav-color);
+    backdrop-filter: blur(20px);
+    border: 2px solid #fff;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.link-times{
+    position: relative;
+    width: 800px;
+    position: absolute;
+    height: 550px;
+    z-index: 99;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: var(--nav-color);
+    backdrop-filter: blur(20px);
+    border: 2px solid #fff;
+    transform: scale(0);
+    transition: transform .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    
+    
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(90deg, #64B3F5, #3055F5);
+    border-radius: 150px;
+}
+.table{
+    min-width: 40rem;
+    min-height: 20rem;
+    margin-bottom:5em; 
+    table-layout: fixed;
+    text-align: center;
+    font-size: larger;
+    color: #87CEFA;
+    overflow-y: scroll;
+}
+.link-chave{
+    position: relative;
+    width: 700px;
+    position: absolute;
+    height: 700px;
+    z-index: 1; 
+    border-radius: 20px;
+    background-color: var(--nav-color);
+    backdrop-filter: blur(20px);
+    border: 2px solid #fff;
+    z-index: 80;
+    transform: scale(0);
+    transition: transform .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+.teste{
+    transform: scale(1);
+}
+/* TABELA */
+table{
+    border-collapse: collapse;
+    border-radius: 4px;
+}
+.table,th, tr, td{
+    margin-bottom:5em; 
+    table-layout: fixed;
+    text-align: center;
+    height: 3em;
+    width: 18em;
+    font-size: larger;
+    color: #87CEFA;
+    
+}
+
+.td, th{
+    padding: 0em;
+    margin: 0;
+    text-align: center;
+    
+}
+.table, tr, td, th{
+    border: 2px solid #87CEFA;
+    
+}
+
+h1, h2{
+    color: white;
+}
+
+th{
+    color: white;
+}
+#table-tittle{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+h1{
+    margin-bottom: 2rem;
+}
+.teste-2{
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+#cs-img{
+    width: 750px;
+    object-fit: cover;
+}
+#jeesp{
+    position: absolute;
+    left: 45rem;
+    bottom: -1rem;
+}
+td{
+    font-size: 1.1rem;
+}
+th{
+    font-size: 1.5rem;
+    font-weight: 500;
 }

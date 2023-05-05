@@ -5,28 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interclasse - Hackaton 2023</title>
-    <link rel="stylesheet" href="../assets/css/nav.css">
-    <link rel="stylesheet" href="../assets/css/modalidade.css">
+    <link rel="stylesheet" href="/assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
     <script src="assets/js/script.js"defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<style>
+    body{
+        background-image: url(/assets/images/resultado.png);
+
+    }
+    #winner{
+        color: #fff;
+        display: flex;
+        position: absolute;
+        top: 25px;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+</style>
 </head>
 <body>
-    
     <nav> 
         <div class="logo">
-            <img src="../assets/images/logo.png" alt="Logo">
+            <img src="/assets/images/logo.png" alt="Logo">
         </div>
         <ul>
-            <li class="list ">
-            <a href="../index.html">
+            <li class="list">
+            <a href="/index.html">
                 <span class="icon"><ion-icon name="home"></ion-icon></span>
                 <span class="tittle">Home</span>
             </a>
             </li>
 
             <li class="list">
-                <a href="./calendar.html">
+                <a href="/components/calendar.html">
                     <span class="icon"><ion-icon name="calendar"></ion-icon></span>
                     <span class="tittle">Calendário</span>
                 </a>
@@ -34,21 +48,21 @@
 
 
             <li class="list">
-                <a href="../components/login.html">
+                <a href="/components/login.html">
                     <span class="icon"><ion-icon name="pencil"></ion-icon></span>
                     <span class="tittle">Cadastro</span>
                 </a>
                 </li>
 
-             <li class="list  active">
-            <a href="./modalidades.html">
+             <li class="list">
+            <a href="/components/modalidades.html">
                 <span class="icon"><ion-icon name="tennisball"></ion-icon></span>
                 <span class="tittle">Modalidades</span>
             </a>
             </li>
 
             <li class="list">
-                <a href="./modalidades/e-sports.html">
+                <a href="/components/modalidades/e-sports.html">
                     <span class="icon"><ion-icon name="game-controller"></ion-icon></span>
                     <span class="tittle">E - Sports</span>
                 </a>
@@ -61,29 +75,5 @@
                     </li>
         </ul>
     </nav>
-
-<div class="container">
-    <a href="/components/modalidades/volei.html">
-    <div class="modalidades">
-        <h2>Vôlei</h2>
-        <p>Informações</p>
-    </div>
-</a>
-
-  <a href="../components/modalidades/futsal.html">
-       <div class="modalidades ">
-        <h2>Futsal</h2>
-        <p>Informações</p>
-    </div>
-</a> 
-
-<a href="../components/modalidades/handbol.html">
-    <div class="modalidades">
-        <h2>Handebol</h2>
-        <p>Informações</p>
-    </div>
-</a>
-</div>
-
-
-</body>
+  <h1 id="winner">GANHADOR</h1>
+   </body>

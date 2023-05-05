@@ -1,9 +1,14 @@
+:root{
+    --nav-color: #101728;
+    --active-color: #3055F5;
+}
 body{
-    background-color: #101728;
+    background-color: var(--nav-color);
+    min-height: 100vh;
     background-image: none;
 }
 .modalidades{
-    width: 20rem;
+    width: 17rem;
     height: 40vh;
     background-color: #498EF5;
     border-radius: 1rem;
@@ -13,6 +18,7 @@ body{
     flex-direction: column;
     color: #fff;
     gap: 1rem;
+    position: relative;
     cursor: pointer;
     transition: all .3s ease-in-out;
     box-shadow: 2px 4px 8px rgba(0,0,0,.5);
@@ -47,15 +53,26 @@ body{
     display: flex;
     gap: 2rem;
     margin-top: 1rem;
+    flex-wrap: wrap;
 }
 a{
     text-decoration: none;
 }
-.gender{
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-left: .3rem;
-}
 
 /* MODALIDADES INDIVIDUAIS */
 
+.image{
+    width: 100px;
+    position: absolute;
+    bottom: 10px;
+}
+#lol{
+    font-size: 2rem;
+    text-align: center;
+}
+#lol-img{
+    bottom: -25px;  
+}
+#vava-img{
+    bottom: -2px;
+}
